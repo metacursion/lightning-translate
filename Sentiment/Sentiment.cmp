@@ -1,0 +1,12 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:attribute type="string" name="input" />
+    <aura:attribute type="string" name="output" />
+    <aura:handler name="change" value="{!v.input}" action="{!c.getRes}"/>
+    
+    <lightning:textarea value="{!v.input}"
+                        label="Text in any language" maxlength="300" />
+    <aura:if isTrue="{! notequals(v.output, '') }">
+        <lightning:textarea value="{!v.output}"
+                            label="Translation" maxlength="300" />
+    </aura:if>
+</aura:component>

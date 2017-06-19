@@ -1,0 +1,19 @@
+<script src="https://eloquent-developer-edition.ap4.force.com/lightning/lightning.out.js"></script>
+<head>
+  <title>Translation in Lightning components</title>
+</head>
+<script>
+  $Lightning.use("c:Translation", 
+  function() { 
+    $Lightning.createComponent(
+      "c:TranslationCmp",
+      {},
+      "lightningLocator",
+      function(cmp) {
+      }
+    );
+  },
+  'https://eloquent-developer-edition.ap4.force.com'
+  );
+</script>
+<div id="lightningLocator">Loading...<div>
