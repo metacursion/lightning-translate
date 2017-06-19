@@ -1,6 +1,6 @@
 ({
   getRes: function(component, event, helper) {
-    const key = 'AIzaSyDGTM7TBaq-8g7Ey93AUDnLUBvjlrlzAuE'
+    const key = 'AIzaSyDGTM7TBaq-8g7Ey93AUDnLUBvjlrlzAuE' // don't bother to use it, it's limited to my domain
     const api = 'https://translation.googleapis.com/language/translate/v2?key='
     const query = event.getParam("value")
     const body = JSON.stringify({
