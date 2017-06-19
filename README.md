@@ -5,7 +5,7 @@ Component uses Google Cloud Translation API, but can also do entity
 analysis (find places, persons, things in text) or sentiment analysis (find 
   general tone of the text).
   
-  [Click here for live demo 
+  [Click for live demo 
   ![Demo GIF](demo.gif)](https://metacursion.github.io/lightning-translate/)
   
   
