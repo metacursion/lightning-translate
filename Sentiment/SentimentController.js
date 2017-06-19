@@ -1,6 +1,6 @@
 ({
   getRes: function(component, event, helper) {
-    const key = 'AIzaSyDGTM7TBaq-8g7Ey93AUDnLUBvjlrlzAuE' // don't bother to use it, it's limited to my domain
+    const key = 'AIzaSyDM1SK68b_O5qwADNB5KxB9BCfIV6hnvkc' // don't bother to use it, it's limited to my domain
     const api = 'https://translation.googleapis.com/language/translate/v2?key='
     const query = event.getParam("value")
     const body = JSON.stringify({
@@ -11,7 +11,6 @@
       method: 'POST',
       body: body
     }).then(m => m.json()).then(j => {
-      console.log(j)
       if (j && j.data && j.data.translations) component.set('v.output', j.data.translations[0].translatedText)
     })
   }
